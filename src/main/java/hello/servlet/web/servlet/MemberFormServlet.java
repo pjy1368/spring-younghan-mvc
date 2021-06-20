@@ -12,8 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "memberFormServlet", urlPatterns = "/servlet/members/new-form")
 public class MemberFormServlet extends HttpServlet {
 
-    private final MemberRepository memberRepository = MemberRepository.getInstance();
-
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
